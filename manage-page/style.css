@@ -239,13 +239,23 @@ svg {
         grid-auto-columns: 1fr;
     }
 }
+:where(.flow :not(:first-child)) {
+    margin-top: var(--flow-spacer, 3em);
+}
+
 /*General Styling*/
 body {
     font-size: var(--fs-body);
     font-family: var(--ff-body);
     color: var(--clr-primary-400);
 }
-
+p:not([class]){
+    opacity: .7;
+    max-width: 32ch;
+}
+p[data-width="wide"]{
+    max-width: 41.5ch;
+}
 /*Navigation*/
 .primary-header {
     padding-top: var(--size-700);
