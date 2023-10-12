@@ -6,6 +6,7 @@
     --clr-primary-400: hsl(228, 39%, 23%);
     --clr-neutral-900: hsl(232, 12%, 13%);
     --clr-neutral-100: hsl(0 0% 100%);
+    --clr-neutral-200: hsl(0 0% 97%);
     --ff-primary: "Be Vietnam Pro", sans-serif;
     --ff-body: var(--ff-primary);
     --ff-heading: var(--ff-primary);
@@ -188,7 +189,7 @@ svg {
 .padding-block-700 {
     padding-block: var(--size-700);
 }
-.margin-bottom-700{
+.margin-bottom-700 {
     margin-block-end: var(--size-700);
 }
 .container {
@@ -264,14 +265,14 @@ svg {
 .text-center {
     text-align: center;
 }
-.text-center p{
+.text-center p {
     margin-inline: auto;
 }
 @media (max-width: 50em) {
     .text-center-small-only {
         text-align: center;
     }
-    .text-center-small-only p{
+    .text-center-small-only p {
         margin-inline: auto;
     }
 }
@@ -524,4 +525,75 @@ input:where([type="email"], [type="text"]) {
         box-shadow: 5em 0 0 var(--clr-accent-100);
         background-color: var(--clr-accent-100);
     }
+}
+
+/*slider*/
+.slider {
+    display: flex;
+    gap: var(--size-600);
+    list-style: none;
+}
+.slider > * {
+    position: relative;
+    flex: 0 0 auto;
+    width: 100%;
+}
+.a11y-slider-container {
+    margin-block: var(--size-700);
+    margin-inline: var(--size-400);
+}
+@media (min-width: 30em) {
+    .slider {
+        scroll-padding-inline: 25px;
+    }
+    .a11y-slider-container {
+        margin-inline: 0;
+    }
+    .slider > * {
+        width: 50%;
+    }
+}
+@media (min-width: 50em) {
+    .slider > * {
+        width: 35%;
+        background-color: red;
+        height: 40vh;
+    }
+}
+.slider-content {
+    padding: var(--size-700) var(--size-600) var(--size-600);
+    border-radius: var(--size-100);
+    background-color: var(--clr-neutral-200);
+}
+.slider img {
+    width: var(--size-800);
+    position: relative;
+    top: calc(var(--size-800) / 2);
+    margin-inline: auto;
+}
+.a11y-slider-dots {
+    display: flex;
+    gap: var(--size-300);
+    justify-content: center;
+    margin-block: var(--size-300);
+}
+.a11y-slider-dots li {
+    display: block;
+    width: 12px;
+    height: 12px;
+    padding: 0;
+    color: #fff;
+}
+.a11y-slider-dots li button {
+    display: block;
+    font-size: 0;
+    text-indent: -9999px;
+    border: 1px solid var(--clr-accent-400);
+    width: 100%;
+    background-color: transparent;
+    height: 100%;
+    border-radius: 100%;
+}
+.a11y-slider-dots li button.active {
+    background: var(--clr-accent-400);
 }
