@@ -366,13 +366,13 @@ p[data-width="wide"] {
         padding: 0.5em;
         width: 1.65rem;
         aspect-ratio: 1;
-        background-image: url("/images/icon-hamburger.svg");
+        background-image: url("./images/icon-hamburger.svg");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
     }
     .mobile-nav-toggle[aria-expanded="true"] {
-        background-image: url("/images/icon-close.svg");
+        background-image: url("./images/icon-close.svg");
     }
 }
 /*primary-footer*/
@@ -480,7 +480,7 @@ input:where([type="email"], [type="text"]) {
     position: absolute;
     inset: 0;
     z-index: -1;
-    background-image: url("/images/bg-tablet-pattern.svg"), url("/images/bg-tablet-pattern.svg");
+    background-image: url("./images/bg-tablet-pattern.svg"), url("./images/bg-tablet-pattern.svg");
     opacity: 0.1;
     background-position:
         -15rem -5rem,
@@ -639,7 +639,7 @@ input:where([type="email"], [type="text"]) {
     max-height: 70vh;
     max-height: 70dvh;
     aspect-ratio: 1 / 1.2;
-    background-image: url("/images/bg-tablet-pattern.svg");
+    background-image: url("./images/bg-tablet-pattern.svg");
     background-position: bottom left;
     background-repeat: no-repeat;
 }
@@ -654,7 +654,7 @@ input:where([type="email"], [type="text"]) {
     position: relative;
 }
 .sales-points_blog::before {
-    content: url("/images/bg-tablet-pattern.svg");
+    content: url("./images/bg-tablet-pattern.svg");
     zoom: 40%;
     position: absolute;
     z-index: -1;
