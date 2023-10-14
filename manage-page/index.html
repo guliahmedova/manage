@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="//unpkg.com/a11y-slider@latest/dist/a11y-slider.css" />
   <link rel="stylesheet" href="style.css">
-  <script src="//unpkg.com/a11y-slider@latest/dist/a11y-slider.js" defer></script>  
+  <script src="//unpkg.com/a11y-slider@latest/dist/a11y-slider.js" defer></script>
   <title>Manage</title>
 </head>
 
@@ -102,7 +102,7 @@
       </div>
     </section>
 
-    <section class="carousel | padding-block-700 text-center">
+    <section class="carousel | padding-block-900 text-center">
       <h2 class="fs-secondary-heading fw-bold">What they’ve said</h2>
       <ul class="slider">
         <li>
@@ -159,50 +159,48 @@
   <footer class="primary-footer | bg-neutral-900 text-neutral-100 padding-block-700">
     <div class="container">
       <div class="primary-footer-wrapper">
-        <div class="primary-footer-logo-social">
-          <a href="#" aria-label="home">
-            <svg class="logo" width="146" height="24">
-              <use xlink:href="/images/logo.svg#logo"></use>
-            </svg>
-          </a>
-          <ul role="list" aria-label="footer" class="social-list">
-            <li>
-              <a aria-label="facebook" href="#">
-                <svg class="social-icon">
-                  <use xlink:href="/images/social-icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a aria-label="youtube" href="#">
-                <svg class="social-icon">
-                  <use xlink:href="/images/social-icons.svg#icon-youtube"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a aria-label="twitter" href="#">
-                <svg class="social-icon">
-                  <use xlink:href="/images/social-icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a aria-label="pinterest" href="#">
-                <svg class="social-icon">
-                  <use xlink:href="/images/social-icons.svg#icon-pinterest"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a aria-label="instagram" href="#">
-                <svg class="social-icon">
-                  <use xlink:href="/images/social-icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+        <a href="#" class="primary-footer-logo" aria-label="home">
+          <svg class="logo" width="146" height="24">
+            <use xlink:href="/images/logo.svg#logo"></use>
+          </svg>
+        </a>
+        <ul role="list" aria-label="footer" class="social-list">
+          <li>
+            <a aria-label="facebook" href="#">
+              <svg class="social-icon">
+                <use xlink:href="/images/social-icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a aria-label="youtube" href="#">
+              <svg class="social-icon">
+                <use xlink:href="/images/social-icons.svg#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a aria-label="twitter" href="#">
+              <svg class="social-icon">
+                <use xlink:href="/images/social-icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a aria-label="pinterest" href="#">
+              <svg class="social-icon">
+                <use xlink:href="/images/social-icons.svg#icon-pinterest"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a aria-label="instagram" href="#">
+              <svg class="social-icon">
+                <use xlink:href="/images/social-icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
         <div class="primary-footer-nav">
           <nav class="footer-nav">
             <ul role="list" class="flow" style="--flow-spacer: 1em" aria-label="footer">
@@ -216,13 +214,13 @@
             </ul>
           </nav>
         </div>
-        <div class="primary-footer-form">
-          <form action="#">
-            <input type="email">
-            <button class="button" data-shadow="none">Go</button>
-          </form>
-          <p>Copyright 2020. All Rights Reserved</p>
-        </div>
+        <!-- <div class="primary-footer-form"> -->
+        <form action="#" class="primary-footer-form">
+          <input type="email">
+          <button class="button" data-shadow="none">Go</button>
+        </form>
+        <p class="primary-footer-copyright">Copyright 2020. All Rights Reserved</p>
+        <!-- </div> -->
       </div>
     </div>
   </footer>
